@@ -1,1 +1,33 @@
 /*global rules*/
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+div.grid-container{
+	background-color: #FFcc;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+[class*='col-']{
+	float: left;
+}
+
+div.left-container{
+	float: left;
+	width: 100px;
+	height: 100%;
+	background-color: #000;
+
+}
+
+
+/* 6 column grid width percentages */
+.col-1{ width: 16.6% }
+.col-2{ width: 33.2% }
+.col-3{ width: 49.8% }
+.col-4{ width: 66.4% }
+.col-5{ width: 83% }
+.col-6{ width: 99.6% }
