@@ -1,13 +1,16 @@
 /*global rules*/
+/*custom font for text*/
+@import url(http://fonts.googleapis.com/css?family=Nunito);
 
 body{
 	padding: 0px;
 	margin: 0px;
+	background: rgb(26,27,31);
 }
+
 
 /* Divide page horizontally. Use these to break-up content, either in main-wrapper, or to break-up divs. */ 
 .grid-section{
-	background-color: #FFcc;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -42,7 +45,32 @@ Using .cell:first-child { margin: 0; } means we don't need to use a class="last"
 .cell-3{ width: 48.2% }
 .cell-4{ width: 64.8% }
 .cell-5{ width: 81.4% }
-.cell-6{ width: 98.4% }
+.cell-6{ width: 100% }
+
+
+
+/* main - rules */
+nav ul{
+    padding: 0;
+}
+
+nav ul li{
+	list-style-type: none;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	border-top: 1px solid #000;
+	border-bottom: 2px solid rgba(105, 103, 101, 0.8);
+	background: rgb(26,27,31);
+
+
+}
+
+nav ul li > ul a{
+	text-decoration: none;
+	color: #fff;
+}
 
 
 

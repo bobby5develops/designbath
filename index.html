@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="UTF=8">
+	<meta charset="UTF-8">
 	<title>designbath homepage</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
 </head>
 <body>
 	<!--doc-container-->
@@ -12,12 +14,45 @@
 			<div class="logo">
 			    <a href="#"><img src="img/designbath-logo.png"></a>
 		    </div>
-			<nav class="">
+			<nav id="accordion" class="">
 				<ul class="">
-					<li class=""><a href="#">page1</a></li>
-					<li class=""><a href="#">page2</a></li>
-					<li class=""><a href="#">page3</a></li>
-					<li class=""><a href="#">page4</a></li>
+					<!-- keep first-child li open by default -->
+					<li class="active">
+						<span class="fa fa-camera-retro"></span><h3>page1</h3>
+						<ul>
+							<li><a href="#">sub-1</a></li>
+							<li><a href="#">sub-2</a></li>
+							<li><a href="#">sub-3</a></li>
+							<li><a href="#">sub-4</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class=""></span><h3>page2</h3>
+						<ul>
+							<li><a href="#">sub-1</a></li>
+							<li><a href="#">sub-2</a></li>
+							<li><a href="#">sub-3</a></li>
+							<li><a href="#">sub-4</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class=""></span><h3>page3</h3>
+						<ul>
+							<li><a href="#">sub-1</a></li>
+							<li><a href="#">sub-2</a></li>
+							<li><a href="#">sub-3</a></li>
+							<li><a href="#">sub-4</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class=""></span><h3>page4</h3>
+						<ul>
+							<li><a href="#">sub-1</a></li>
+							<li><a href="#">sub-2</a></li>
+							<li><a href="#">sub-3</a></li>
+							<li><a href="#">sub-4</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav><!--end side-nav-->
 		</div><!--end left-container-->
@@ -28,7 +63,9 @@
         </div><!--end product-container-->
 	</div><!--end doc-container-->
 	
-
+	<!--install external javascript libraries via cdn-->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 </body>
 </html>
