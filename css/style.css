@@ -1,33 +1,50 @@
 /*global rules*/
+
 body{
 	padding: 0px;
 	margin: 0px;
 }
 
-div.grid-container{
+/* Divide page horizontally. Use these to break-up content, either in main-wrapper, or to break-up divs. */ 
+.grid-section{
 	background-color: #FFcc;
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	clear: both;
 }
-
-[class*='col-']{
+/*Clearfix hack for keeping content designated to grid-section stays in it's grid-section */
+.grid-section:before, 
+.grid-section:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Divides page vertically. These are the columns. Each has a left margin of 1.6% ( around 20 pixels on a normal monitor ), except the first column. 
+Using .cell:first-child { margin: 0; } means we don't need to use a class="last" on every single column. */
+[class*='cell-']{
+	display: block;
 	float: left;
+	margin: 1% 0 1% 2%;
+	width: 16.66%;
 }
 
-div.left-container{
-	float: left;
-	width: 100px;
-	height: 100%;
-	background-color: #000;
-
+[class*='cell-']:first-child{
+   margin-left: 0;
 }
 
 
-/* 6 column grid width percentages */
-.col-1{ width: 16.6% }
-.col-2{ width: 33.2% }
-.col-3{ width: 49.8% }
-.col-4{ width: 66.4% }
-.col-5{ width: 83% }
-.col-6{ width: 99.6% }
+
+
+/* 6 column grid width percentages // subtracting 1.6% gutter width from each column-width percentage */
+.cell-1{ width: 15.06% }
+.cell-2{ width: 31.6% }
+.cell-3{ width: 48.2% }
+.cell-4{ width: 64.8% }
+.cell-5{ width: 81.4% }
+.cell-6{ width: 98.4% }
+
+
+
+
+
