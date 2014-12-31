@@ -56,6 +56,10 @@ Using .cell:first-child { margin: 0; } means we don't need to use a class="last"
 
 
 /* main - rules */
+
+div.logo{
+	margin-left: 5%;
+}
 nav ul{
     padding: 0;
 }
