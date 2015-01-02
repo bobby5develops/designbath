@@ -56,37 +56,39 @@ Using .cell:first-child { margin: 0; } means we don't need to use a class="last"
 
 
 /* main - rules */
-
 div.logo{
-	margin-left: 5%;
+	margin-left: 15%;
 }
+
 nav ul{
     padding: 0;
+    list-style-type: none;
+
 }
 
-/*nav ul li{
-	list-style-type: none;
-	text-decoration: none;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 20px;
-	border-top: 1px solid #000;
-	border-bottom: 2px solid rgba(105, 103, 101, 0.8);
-	background: rgb(26,27,31);
+nav.global ul li{
+	float: left;
 
 
 }
 
-nav ul li > ul a{
+nav.global ul li a{
+	display: block;
+	width: 50px;
 	text-decoration: none;
-	color: #fff;
-}*/
+}
+
+nav.global:before, 
+nav.global:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
 /* accordion rules */
 #accordion {
 	background: #004050;
-	width: 250px;
-	margin: 50px auto 0 auto;
+	margin: 15px auto 0 auto;
 	color: white;
 	/*Some cool shadow and glow effect*/
 	box-shadow: 
@@ -141,5 +143,15 @@ nav ul li > ul a{
 }
 #accordion li.active ul {
 	display: block;
+}
+
+/* content div rules */
+div#content{
+	background-color: rgb(255,255,255);
+	margin: 0px;
+}
+
+div#grid{
+	margin: 0px;
 }
 

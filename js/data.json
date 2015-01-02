@@ -1,0 +1,21 @@
+pageArray[
+      page1{
+      	header: "page1",
+      	content: "content1"
+
+      	},
+      page2{
+      	header: "page2",
+      	content: "content2"
+
+      	},
+      page3{
+        header: "page3",
+        content: "content3"
+      	},
+      page4{
+      	header: "page4",
+      	content: "content4"
+
+      }
+]
