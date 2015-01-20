@@ -7,6 +7,7 @@
 	padding: 0;
 }
 
+
 body{
 	padding: 0px;
 	margin: 0px;
@@ -43,6 +44,16 @@ Using .cell:first-child { margin: 0; } means we don't need to use a class="last"
 }
 
 
+/*float classes*/
+.pull-right{
+	float: right;
+}
+
+.pull-left{
+	float: left;
+}
+
+
 
 
 /* 6 column grid width percentages // subtracting 1.6% gutter width from each column-width percentage */
@@ -74,7 +85,7 @@ nav.global ul li{
 
 nav.global ul li a{
 	display: block;
-	width: 50px;
+	/*width: 50px;*/
 	text-decoration: none;
 }
 
@@ -149,6 +160,7 @@ nav.global:after {
 div#content{
 	background-color: rgb(255,255,255);
 	margin: 0px;
+	padding: 20px;
 }
 
 div#grid{

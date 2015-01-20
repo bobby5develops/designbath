@@ -1,5 +1,6 @@
-/*accordion*/
+
 $(document).ready(function(){
+	/*navigation accordion*/
 	$("#accordion h3").click(function(){
 		//slide up all link sub-menu lists
 		$("#accordion ul ul").slideUp();
@@ -8,4 +9,6 @@ $(document).ready(function(){
             $(this).next().slideDown();
 		};
 	})
-})
+
+
+});
